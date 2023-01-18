@@ -10,15 +10,13 @@ describe('GET /hello/:name', () => {
 
   afterEach(() => {
     server.stop()
-  })
+  });
 
-  describe('POST /api/v1/login', () => {
-    test('Should return welcome string', async () => {
-      const res = await supertest(config.url)
-        .get('/hello/nik')
-        .set('Accept', 'application/json');
+  test('Should return welcome string', async () => {
+    const res = await supertest(config.url)
+      .get('/hello/nik')
+      .set('Accept', 'application/json');
 
-      expect(res.body).toEqual({ msg: 'Hello nik from express' })
-    });
+    expect(res.body).toEqual({ msg: 'Hello nik from express' })
   });
 });
