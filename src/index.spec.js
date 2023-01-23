@@ -25,6 +25,6 @@ describe('GET /hello/:name', () => {
       .get('/hello/bad-user')
       .set('Accept', 'application/json');
 
-    expect(res.body).toEqual({ msg: 'Hello anon from express' })
+    expect(res.body).toEqual({ msg: 'Hello bad-user from express' })
   });
 });
