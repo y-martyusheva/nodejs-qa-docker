@@ -12,6 +12,8 @@ app.get('/hello/:name', (req, res) => {
   });
 });
 
+console.log('test')
+
 export default {
   start() {
     server = app.listen(config.port, () => {
