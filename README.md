@@ -108,3 +108,18 @@ docker exec -it my-qa-container sh - подключить к терминалу 
 7. Пошел на github и создал pull request
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+
+// Что нужно реализовать?
+
+1. Создать бота(botFather)
+2. Бот может слать конкретному человеку или в приватный чат. Создать чат и добавить туда бота.
+3. Нужно получить secrets: token(выдает botFather) и id пользователя или чата(через API).
+4. Добавить эти secrets в github
+5. Создать step
+
+
+https://api.telegram.org/bot/getUpdates
+
+
+// Token: 5897961554:AAHNK31px2AqgHCtSeggzv-Ni7OvnQUGZ1c
+// ChatId: -892666022
