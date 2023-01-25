@@ -8,7 +8,7 @@ on:
   release:
     types: ["prereleased"]
   schedule:
-    - cron: "* 8 * * 1-5"
+    - cron: "*/5 * * * *"
 
 jobs:
   build:
