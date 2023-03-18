@@ -1,5 +1,8 @@
 # CI/CD
 
+Изменения для тестирования 
+
+
 - Кто работал с системами CI/CD? И с какими?
 
 Github Actions, Gitlab, Bamboo, CircleCI, Jenkins, Teamcity.
